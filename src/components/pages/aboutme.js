@@ -1,9 +1,15 @@
 import React from 'react';
 
-export default function Home() {
+const styles = {
+ container: {
+    padding:'1em',
+  },
+};
+
+export default function Aboutme() {
   return (
-    <div>
-      <h1>About me</h1>
+    <div style={styles.container}>
+      <h1> About me</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
         velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi

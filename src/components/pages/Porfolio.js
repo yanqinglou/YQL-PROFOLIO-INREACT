@@ -1,9 +1,17 @@
 import React from 'react';
 
-export default function About() {
+const styles=
+{
+  container: {
+    padding:'1em',
+  },
+}
+
+
+export default function Porfolio() {
   return (
-    <div>
-      <h1>About Page</h1>
+    <div style={styles.container}>
+      <h1>Porfolio</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
         Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed

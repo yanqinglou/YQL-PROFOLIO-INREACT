@@ -1,35 +1,60 @@
-import React, { useState } from 'react';
-import NavTabs from './NavTabs';
-import aboutme from './pages/aboutme';
-import porfolio from './pages/Porfolio';
-import Blog from './pages/Blog';
-import Contact from './pages/Contact';
+import React, { useState } from "react";
+import NavTabs from "./NavTabs";
+import Aboutme from "./pages/Aboutme";
+import Porfolio from "./pages/Porfolio";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
+import Footer from "./Footer."
+
+const styles = {
+  NavTabs:{
+    marginRight:0
+  },
+  header: {
+    padding:'1em',
+    display: "flex",
+    justifyContent:"space-between",
+
+  },
+  body:{
+    minHeight:'90vh'
+  }
+  
+};
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState("Home");
 
   //based the current page, render corresponding page on line 33
   const renderPage = () => {
-    if (currentPage === 'About me') {
-      return <aboutme />;
+    if (currentPage === "About me") {
+      return <Aboutme />;
     }
-    if (currentPage === 'Porfolio') {
-      return <porfolio />;
+    if (currentPage === "Porfolio") {
+      return <Porfolio />;
     }
-    if (currentPage === 'Blog') {
-      return <Blog />;
+    if (currentPage === "Contact") {
+      return <Contact />;
     }
-    return <Contact />;
+    return <Resume />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-      <h1>YQL Portfolio</h1>
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <div style={styles.body}>
+      <div style={styles.header}>
+        <h1> Yanqing Lou </h1>
+        <NavTabs
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+          style={styles.NavTabs}
+        />
+      </div>
       {renderPage()}
-    
+      </div>
+      <Footer/>
     </div>
   );
 }
