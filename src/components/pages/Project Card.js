@@ -1,7 +1,7 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import SaveyourSeat from '/src/Assets/saveyourseat.png'
+import SaveyourSeat from '../../Assets/saveyourseat.png'
 
 // const styles = {};
 
