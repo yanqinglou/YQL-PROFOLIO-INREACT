@@ -7,7 +7,7 @@ import './style.css'
 
 export default function ProjectCard(props) {
   return (
-    <Card classname ='card' style={{ width: '18rem' }}>
+    <Card className ='card' style={{ width: '18rem' }}>
       <Card.Img variant="top" src={props.img} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
