@@ -1,14 +1,14 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import SaveyourSeat from '../../Assets/saveyourseat.png'
+import './style.css'
 
 // const styles = {};
 
 export default function ProjectCard(props) {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={SaveyourSeat} />
+    <Card classname ='card' style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={props.img} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
         <Card.Text>
@@ -17,5 +17,6 @@ export default function ProjectCard(props) {
         <Button variant="primary" href={props.link} target='_blank'>Deployed Site</Button>
       </Card.Body>
     </Card>
+
   );
 }

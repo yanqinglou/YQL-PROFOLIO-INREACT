@@ -1,0 +1,10 @@
+.card{
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    background-color: #cfd6d9;
+}
+
+.card:hover {
+    box-shadow: inset 300px 0 0 0 #cfd6d9;
+    color: white;
+  }
+  

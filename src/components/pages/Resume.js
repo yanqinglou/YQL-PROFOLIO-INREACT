@@ -1,8 +1,14 @@
 import React from 'react';
 
+const styles = {
+  container: {
+     padding:'1em',
+   },
+ };
+
 export default function Resume() {
   return (
-    <div>
+    <div style={styles.container}>
       <h1>Resume</h1>
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
