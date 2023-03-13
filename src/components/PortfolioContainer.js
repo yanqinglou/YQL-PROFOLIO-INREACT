@@ -23,7 +23,7 @@ const styles = {
 };
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPage, setCurrentPage] = useState("About me");
 
   //based the current page, render corresponding page on line 33
   const renderPage = () => {
