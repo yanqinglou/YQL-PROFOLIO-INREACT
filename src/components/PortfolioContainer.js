@@ -42,7 +42,7 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div className="header">
       <div style={styles.body}>
       <div style={styles.header}>
         <h1> Yanqing Lou </h1>
